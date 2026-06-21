@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,10 +56,22 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ctv-hK-kA1"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6It-Oi-3Ri">
+                                <rect key="frame" x="20" y="355" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KTf-CD-dD7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6It-Oi-3Ri" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="6lF-qn-CzL"/>
                             <constraint firstItem="QhS-8w-szm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLh-KU-zNN"/>
+                            <constraint firstItem="QhS-8w-szm" firstAttribute="top" secondItem="6It-Oi-3Ri" secondAttribute="bottom" constant="8" symbolic="YES" id="VzU-9h-GGw"/>
+                            <constraint firstAttribute="trailing" secondItem="6It-Oi-3Ri" secondAttribute="trailing" constant="20" symbolic="YES" id="XsJ-du-H2L"/>
                             <constraint firstAttribute="trailing" secondItem="QhS-8w-szm" secondAttribute="trailing" id="ash-Ig-YBT"/>
                             <constraint firstItem="QhS-8w-szm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eOv-Yx-ux5"/>
                             <constraint firstItem="QhS-8w-szm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lKJ-Xt-K7m"/>
@@ -71,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.23188405797103" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>

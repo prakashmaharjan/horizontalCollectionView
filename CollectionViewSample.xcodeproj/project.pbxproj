@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16EAD59D2FE7CC15008F8F52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E2EFE521E5D62C100BE9B32 /* ColCell.h */,
+				8E2EFE531E5D62C100BE9B32 /* ColCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		16EAD59E2FE7CC24008F8F52 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E2EFE3C1E5D605E00BE9B32 /* AppDelegate.h */,
+				8E2EFE3D1E5D605E00BE9B32 /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		16EAD59F2FE7CC52008F8F52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E2EFE3F1E5D605E00BE9B32 /* ViewController.h */,
+				8E2EFE401E5D605E00BE9B32 /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		16EAD5A02FE7CC6D008F8F52 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E2EFE501E5D619E00BE9B32 /* sample.jpg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		16EAD5A12FE7CC96008F8F52 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E2EFE421E5D605E00BE9B32 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		8E2EFE2D1E5D605E00BE9B32 = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +110,11 @@
 		8E2EFE381E5D605E00BE9B32 /* CollectionViewSample */ = {
 			isa = PBXGroup;
 			children = (
-				8E2EFE3C1E5D605E00BE9B32 /* AppDelegate.h */,
-				8E2EFE3D1E5D605E00BE9B32 /* AppDelegate.m */,
-				8E2EFE501E5D619E00BE9B32 /* sample.jpg */,
-				8E2EFE521E5D62C100BE9B32 /* ColCell.h */,
-				8E2EFE531E5D62C100BE9B32 /* ColCell.m */,
-				8E2EFE3F1E5D605E00BE9B32 /* ViewController.h */,
-				8E2EFE401E5D605E00BE9B32 /* ViewController.m */,
-				8E2EFE421E5D605E00BE9B32 /* Main.storyboard */,
+				16EAD5A12FE7CC96008F8F52 /* Storyboards */,
+				16EAD5A02FE7CC6D008F8F52 /* resources */,
+				16EAD59F2FE7CC52008F8F52 /* ViewControllers */,
+				16EAD59E2FE7CC24008F8F52 /* App */,
+				16EAD59D2FE7CC15008F8F52 /* Cells */,
 				8E2EFE451E5D605E00BE9B32 /* Assets.xcassets */,
 				8E2EFE471E5D605E00BE9B32 /* LaunchScreen.storyboard */,
 				8E2EFE4A1E5D605E00BE9B32 /* Info.plist */,
@@ -125,7 +165,8 @@
 		8E2EFE2E1E5D605E00BE9B32 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2650;
 				ORGANIZATIONNAME = "Prakash Maharjan";
 				TargetAttributes = {
 					8E2EFE351E5D605E00BE9B32 = {
@@ -235,8 +276,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E4QP42Z85R;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -255,6 +298,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -293,8 +338,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E4QP42Z85R;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -306,6 +353,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -315,11 +364,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E4QP42Z85R;
 				INFOPLIST_FILE = CollectionViewSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prakashmaharjan.CollectionViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -327,11 +379,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E4QP42Z85R;
 				INFOPLIST_FILE = CollectionViewSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prakashmaharjan.CollectionViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
